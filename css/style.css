@@ -84,6 +84,8 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 90vw; /* Set canvas width to 90% of viewport width */
+    height: 60vh; /* Set canvas height to 60% of viewport height */
 }
 .card_header{
     background-color: forestgreen;
