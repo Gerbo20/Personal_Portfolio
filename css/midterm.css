@@ -1,0 +1,227 @@
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: navy;
+}
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+    display: block;
+    color: honeydew;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+ul.topnav li a:hover:not(.active) {background-color: forestgreen;}
+ul.topnav li a.active {background-color: forestgreen;}
+ul.topnav li.right {float: right;}
+@media screen and (max-width: 600px) {
+    ul.topnav li.right,
+    ul.topnav li {
+        float: none;
+    }
+}
+.portrait {
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+/* Header Styles */
+h1 {
+    color: honeydew;
+    font-size: xxx-large;
+    text-shadow: 3px 3px 2px forestgreen;
+    text-align: center;
+    padding: 0;
+}
+.intro{
+    text-align: center;
+    color: honeydew;
+    font-size:  15px;
+    text-shadow: 2px 2px 1px forestgreen;
+}
+strong{
+    font-size: xx-large;
+}
+h2 {
+    color: honeydew;
+    font-size: x-large;
+    text-shadow: 3px 3px 2px forestgreen;
+}
+
+/* Section Styles */
+h3 {
+    color: honeydew;
+    font-size: large;
+    text-align: center;
+    margin-top: -30px;
+}
+.about_me{
+    color: honeydew;
+    font-size:  15px;
+    text-shadow: 2px 2px 1px forestgreen;
+}
+.experience{
+    display: none;
+    color: honeydew;
+    font-size:  15px;
+    text-shadow: 2px 2px 1px forestgreen;
+}
+.boxes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card_header{
+    background-color: forestgreen;
+    width: 100px;
+    height: 10px;
+    border: 20px forestgreen;
+    padding: 50px;
+}
+.card_body{
+    background-color: honeydew;
+    width: 184px;
+    height: 300px;
+    border: 8px solid forestgreen;
+
+}
+.math_race{
+    width: 100px;
+    height: 100px;
+    position: relative; /* Set button position to relative */
+    left: 40px; /* Adjust left position */
+    top: 80px; /* Adjust top position */
+
+}
+.search_engine{
+    width: 150px;
+    height: 100px;
+    position: relative; /* Set button position to relative */
+    left: 20px; /* Adjust left position */
+    top: 80px; /* Adjust top position */
+
+}
+.btn:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+#c_button{
+    position: relative; /* Set button position to relative */
+    left: 40px; /* Adjust left position */
+    top: 130px; /* Adjust top position */
+    border: forestgreen;
+    background-color: forestgreen;
+    padding: 15px;
+    border-radius: 12px;
+    color: honeydew;
+    font-size: 15px;
+
+}
+#hc_button{
+    position: relative; /* Set button position to relative */
+    left: 40px; /* Adjust left position */
+    top: 130px; /* Adjust top position */
+    border: forestgreen;
+    background-color: forestgreen;
+    padding: 15px;
+    border-radius: 12px;
+    color: honeydew;
+    font-size: 15px;
+
+}
+#js_button{
+    position: relative; /* Set button position to relative */
+    left: 50px; /* Adjust left position */
+    top: 130px; /* Adjust top position */
+    border: forestgreen;
+    background-color: forestgreen;
+    padding: 15px;
+    border-radius: 12px;
+    color: honeydew;
+    font-size: 15px;
+}
+
+
+.c_prog {
+    padding: 15px;
+    overflow: hidden;
+    border-radius: 20%;
+}
+.hc_prog {
+    padding: 15px;
+    overflow: hidden;
+    border-radius: 20%;
+}
+.js_prog{
+    padding: 15px;
+    overflow: hidden;
+    border-radius: 20%;
+}
+
+.contact{
+    color: honeydew;
+    font-size:  15px;
+    text-shadow: 2px 2px 1px forestgreen;
+}
+.connect{
+    text-align: center;
+}
+.d_logo{
+    height: 100px;
+    width: 100px;
+
+}
+.li_logo{
+    height: 100px;
+    width: 100px;
+    padding-left: 50px;
+}
+.e_logo{
+    height: 100px;
+    width: 100px;
+    padding-left: 50px;
+}
+/* Experience List Styles */
+dl {
+    margin-top: 20px;
+}
+dt {
+    font-weight: bold;
+    margin-top: 10px;
+}
+dd {
+    margin-left: 20px;
+}
+
+ul {
+    list-style-type: square;
+    margin-bottom: 10px;
+}
+li {
+    margin-bottom: 5px;
+}
+
+/* Time Styles */
+time {
+    display: block;
+    color: lawngreen;
+    margin-top: 20px;
+    font-size: 0.9em;
+}
