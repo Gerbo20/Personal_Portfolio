@@ -16,19 +16,24 @@ function initializeVanta() {
 // Call the function to initialize VANTA.NET
 initializeVanta();
 
+function initializeVanta2() {
+    VANTA.TRUNK({
+        el: ".experience",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        scaleMobile: 1.00,
+        color: 0x135916,
+        backgroundColor: 0x102843,
+        spacing: 1.50,
+        chaos: 3.50
+    })
+}
+// Call the function to initialize VANTA.NET
+initializeVanta2();
 
-document.addEventListener('DOMContentLoaded', function() {
-    var experienceLink = document.getElementById('experienceLink');
-    var experienceSection = document.getElementById('experience');
 
-    experienceLink.addEventListener('click', function(event) {
-        event.preventDefault(); // Prevent the default link behavior (scrolling)
-
-        if (experienceSection.style.display === 'block') {
-            experienceSection.style.display = 'none';
-        } else {
-            experienceSection.style.display = 'block';
-        }
-    });
-});
 

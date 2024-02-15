@@ -66,9 +66,9 @@ h2 {
 /* Section Styles */
 h3 {
     color: honeydew;
-    font-size: large;
+    font-size: 15px;
     text-align: center;
-    margin-top: -30px;
+    margin-top: -40px;
 }
 .about_me{
     color: honeydew;
@@ -76,7 +76,6 @@ h3 {
     text-shadow: 2px 2px 1px forestgreen;
 }
 .experience{
-    display: none;
     color: honeydew;
     font-size:  15px;
     text-shadow: 2px 2px 1px forestgreen;
@@ -91,88 +90,69 @@ h3 {
     width: 100px;
     height: 10px;
     border: 20px forestgreen;
-    padding: 50px;
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 .card_body{
     background-color: honeydew;
     width: 184px;
-    height: 300px;
+    height: 200px;
     border: 8px solid forestgreen;
 
 }
 .math_race{
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     position: relative; /* Set button position to relative */
-    left: 40px; /* Adjust left position */
-    top: 80px; /* Adjust top position */
+    right: 10px; /* Adjust right position */
+    top: 5px; /* Adjust top position */
 
 }
 .search_engine{
-    width: 150px;
-    height: 100px;
+    width: 220px;
+    height: 170px;
     position: relative; /* Set button position to relative */
-    left: 20px; /* Adjust left position */
-    top: 80px; /* Adjust top position */
-
+    right: 20px; /* Adjust right position */
+    top: 5px; /* Adjust top position */
 }
-.btn:hover {
-    cursor: pointer;
-    background-color: black;
-    color: white;
-}
-
-#c_button{
+.jump_game{
+    width: 220px;
+    height: 170px;
     position: relative; /* Set button position to relative */
-    left: 40px; /* Adjust left position */
-    top: 130px; /* Adjust top position */
-    border: forestgreen;
-    background-color: forestgreen;
-    padding: 15px;
-    border-radius: 12px;
-    color: honeydew;
-    font-size: 15px;
-
-}
-#hc_button{
-    position: relative; /* Set button position to relative */
-    left: 40px; /* Adjust left position */
-    top: 130px; /* Adjust top position */
-    border: forestgreen;
-    background-color: forestgreen;
-    padding: 15px;
-    border-radius: 12px;
-    color: honeydew;
-    font-size: 15px;
-
-}
-#js_button{
-    position: relative; /* Set button position to relative */
-    left: 50px; /* Adjust left position */
-    top: 130px; /* Adjust top position */
-    border: forestgreen;
-    background-color: forestgreen;
-    padding: 15px;
-    border-radius: 12px;
-    color: honeydew;
-    font-size: 15px;
+    right: 20px; /* Adjust right position */
+    top: 5px; /* Adjust top position */
 }
 
-
-.c_prog {
+.c_program {
     padding: 15px;
     overflow: hidden;
-    border-radius: 20%;
+    border-radius: 60px;
 }
-.hc_prog {
+.c_program:hover {
+    background-color: forestgreen;
+    overflow: hidden;
+    border-radius: 60px;
+}
+.hc_program {
     padding: 15px;
     overflow: hidden;
-    border-radius: 20%;
+    border-radius: 60px;
 }
-.js_prog{
+.hc_program:hover{
+    background-color: forestgreen;
+    overflow: hidden;
+    border-radius: 60px;
+}
+.js_program {
     padding: 15px;
     overflow: hidden;
-    border-radius: 20%;
+    border-radius: 60px;
+}
+.js_program:hover{
+    background-color: forestgreen;
+    overflow: hidden;
+    border-radius: 60px;
 }
 
 .contact{
@@ -222,6 +202,7 @@ li {
 time {
     display: block;
     color: lawngreen;
+    text-align: center;
     margin-top: 20px;
     font-size: 0.9em;
 }
