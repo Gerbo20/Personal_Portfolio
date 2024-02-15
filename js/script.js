@@ -48,14 +48,12 @@ canvas.addEventListener('mousedown', function(e) {
     isDrawing = true;
     [mouseX, mouseY] = [e.offsetX, e.offsetY];
 });
-
 canvas.addEventListener('mousemove', function(e) {
     if (isDrawing) {
         drawLine(ctx, mouseX, mouseY, e.offsetX, e.offsetY);
         [mouseX, mouseY] = [e.offsetX, e.offsetY];
     }
 });
-
 canvas.addEventListener('mouseup', function() {
     isDrawing = false;
 });
@@ -70,6 +68,10 @@ function drawLine(context, x1, y1, x2, y2) {
     context.stroke();
     context.closePath();
 }
+// Function to clear the canvas
+document.getElementById('clearButton').addEventListener('click', function() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+});
 
 
 

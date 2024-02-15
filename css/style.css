@@ -205,6 +205,16 @@ canvas {
     cursor: crosshair;
     border: 1px solid #ccc;
 }
+#clearButton{
+    color: honeydew;
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: forestgreen;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
 /* Time Styles */
 time {
     display: block;
