@@ -39,6 +39,14 @@ initializeVanta2();
 var canvas = document.getElementById('signatureCanvas');
 var ctx = canvas.getContext('2d');
 
+function setCanvasSize() {
+    canvas.width = window.innerWidth * 0.9; // Set canvas width to 90% of viewport width
+    canvas.height = window.innerHeight * 0.6; // Set canvas height to 60% of viewport height
+}
+// Call setCanvasSize initially and when window is resized
+setCanvasSize();
+window.addEventListener('resize', setCanvasSize);
+
 // Variables to store mouse position
 var mouseX, mouseY;
 var isDrawing = false;
