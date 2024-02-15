@@ -206,8 +206,6 @@ canvas {
     border: 1px solid #ccc;
     width: 90vw; /* Set canvas width to 90% of viewport width */
     height: 60vh; /* Set canvas height to 60% of viewport height */
-    max-width: 800px; /* Set maximum canvas width */
-    max-height: 400px; /* Set maximum canvas height */
 }
 #clearButton{
     color: honeydew;
