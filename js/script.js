@@ -35,5 +35,41 @@ function initializeVanta2() {
 // Call the function to initialize VANTA.NET
 initializeVanta2();
 
+// Get canvas element
+var canvas = document.getElementById('signatureCanvas');
+var ctx = canvas.getContext('2d');
+
+// Variables to store mouse position
+var mouseX, mouseY;
+var isDrawing = false;
+
+// Event listeners to track mouse movements
+canvas.addEventListener('mousedown', function(e) {
+    isDrawing = true;
+    [mouseX, mouseY] = [e.offsetX, e.offsetY];
+});
+
+canvas.addEventListener('mousemove', function(e) {
+    if (isDrawing) {
+        drawLine(ctx, mouseX, mouseY, e.offsetX, e.offsetY);
+        [mouseX, mouseY] = [e.offsetX, e.offsetY];
+    }
+});
+
+canvas.addEventListener('mouseup', function() {
+    isDrawing = false;
+});
+
+// Function to draw line between two points
+function drawLine(context, x1, y1, x2, y2) {
+    context.beginPath();
+    context.strokeStyle = '#000'; // Black color
+    context.lineWidth = 2;
+    context.moveTo(x1, y1);
+    context.lineTo(x2, y2);
+    context.stroke();
+    context.closePath();
+}
+
 
 

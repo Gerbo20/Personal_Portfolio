@@ -198,6 +198,13 @@ li {
     margin-bottom: 5px;
 }
 
+canvas {
+    display: block;
+    margin: auto;
+    background: #f0f0f0;
+    cursor: crosshair;
+    border: 1px solid #ccc;
+}
 /* Time Styles */
 time {
     display: block;
